@@ -1,0 +1,137 @@
+Flow report for CPU
+Fri May 26 16:25:39 2023
+Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Fri May 26 16:25:39 2023       ;
+; Quartus II 64-Bit Version       ; 14.0.0 Build 200 06/17/2014 SJ Full Version ;
+; Revision Name                   ; CPU                                         ;
+; Top-level Entity Name           ; sc_interrupt                                ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSEMA5F31C6                                ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 1,419 / 32,070 ( 4 % )                      ;
+; Total registers                 ; 1220                                        ;
+; Total pins                      ; 176 / 457 ( 39 % )                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 05/26/2023 16:22:32 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; CPU                 ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                          ;
++-------------------------------------+-----------------------------------------------------+---------------+--------------+----------------+
+; Assignment Name                     ; Value                                               ; Default Value ; Entity Name  ; Section Id     ;
++-------------------------------------+-----------------------------------------------------+---------------+--------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 88491852811136.168508935201716                      ; --            ; --           ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                 ; --            ; --           ; eda_simulation ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/Administrator/Desktop/CPU/simulation/qsim/ ; --            ; --           ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                         ; --            ; --           ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                           ; <None>        ; --           ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                                ; --            ; --           ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                  ; --            ; --           ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                   ; --            ; --           ; --             ;
+; PARTITION_COLOR                     ; 16764057                                            ; --            ; sc_interrupt ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                               ; --            ; sc_interrupt ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                              ; --            ; sc_interrupt ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                 ; --            ; --           ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW               ; --            ; --           ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                        ; --            ; --           ; --             ;
+; TOP_LEVEL_ENTITY                    ; sc_interrupt                                        ; CPU           ; --           ; --             ;
++-------------------------------------+-----------------------------------------------------+---------------+--------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 646 MB              ; 00:00:10                           ;
+; Fitter                    ; 00:02:00     ; 2.9                     ; 2254 MB             ; 00:03:09                           ;
+; Assembler                 ; 00:00:10     ; 1.0                     ; 691 MB              ; 00:00:09                           ;
+; TimeQuest Timing Analyzer ; 00:00:37     ; 1.5                     ; 1081 MB             ; 00:00:48                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 581 MB              ; 00:00:02                           ;
+; Total                     ; 00:03:00     ; --                      ; --                  ; 00:04:18                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; 201-27           ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; 201-27           ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; 201-27           ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; 201-27           ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; 201-27           ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
+quartus_fit --read_settings_files=off --write_settings_files=off CPU -c CPU
+quartus_asm --read_settings_files=off --write_settings_files=off CPU -c CPU
+quartus_sta CPU -c CPU
+quartus_eda --read_settings_files=off --write_settings_files=off CPU -c CPU
+
+
+

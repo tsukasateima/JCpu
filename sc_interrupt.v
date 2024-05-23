@@ -1,0 +1,25 @@
+module  sc_interrupt(CLK_50, resetn, inst, pc, aluout, memout, mem_clk, intr, inta, overflow,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
+(*chip_pin="AE26,AE27,AE28,AG27,AF28,AG28,AH28"*)output      [6:0]  HEX0;
+(*chip_pin="AJ29,AH29,AH30,AG30,AF29,AF30,AD27"*)output      [6:0]  HEX1;
+(*chip_pin="AB23,AE29,AD29,AC28,AD30,AC29,AC30"*)output      [6:0]  HEX2;
+(*chip_pin="AD26,AC27,AD25,AC25,AB28,AB25,AB22"*)output      [6:0]  HEX3;
+(*chip_pin="AA24,Y23,Y24,W22,W24,V23,W25"*)output      [6:0]  HEX4;
+(*chip_pin="V25,AA28,Y27,AB27,AB26,AA26,AA25"*)output      [6:0]  HEX5;
+(*chip_pin="AF14"*)input  CLK_50;
+(*chip_pin="AB12"*)input  resetn;
+input            mem_clk, intr;
+output   [31:0]  inst, pc, aluout, memout;
+output           inta, overflow;
+wire     [31:0]  data;
+wire             wmem,clock;
+clk_div          u   (CLK_50,clock);
+sccpu_intr       cpu  (clock, resetn, inst, memout, pc, wmem, aluout, data, intr, inta, overflow);
+sci_intr         imem (pc, inst);
+scd_intr         dmem (clock, memout, data, aluout, wmem);
+display u0(pc[3:0],HEX0);
+display u1(pc[7:4],HEX1);
+display u2(pc[11:8],HEX2);
+display u3(pc[15:12],HEX3);
+display u4(pc[19:16],HEX4);
+display u5(pc[23:20],HEX5);
+endmodule
